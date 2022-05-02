@@ -1,0 +1,33 @@
+[
+    {
+        "id": "1",
+        "name": "Chicken Alfredo Pasta",
+        "description": "Pasta in a creamy alfredo sauce with chicken on top",
+        "imageName": "alfredo",
+    },
+    {
+        "id": "2",
+        "name": "NewYork Cheesecake",
+        "description": "NewYork style cheesecake topped with strawberries",
+        "imageName": "cheesecake",
+    },
+    {
+        "id": "3",
+        "name": "Mac and Cheese Lasagna",
+        "description": "Lasagna pasta with Mac and Cheese fillings",
+        "imageName": "lasagna",
+    },
+    {
+        "id": "4",
+        "name": "Shrimp Fry Rice",
+        "description": "A fry rice dish with shrimp, garlic, and soy sauce",
+        "imageName": "fryrice",
+    },
+    {
+        "id": "5",
+        "name": "Crunchy Sushi Roll",
+        "description": "California roll topped with deep fried seaweed and onion strips",
+        "imageName": "sushi",
+    }
+    
+]
