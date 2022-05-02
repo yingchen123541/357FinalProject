@@ -1,8 +1,8 @@
 //
 //  AddNewFood.swift
 //  Preferable simulator: iphone 11
-//  Yuki_Chen_Project2
-//  Created by yingying Chen on 4/3/22.
+//  Yuki_Chen_final_project
+//  Created by yingying Chen on 5/2/22.
 //
 
 import SwiftUI
