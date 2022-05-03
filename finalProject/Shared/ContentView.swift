@@ -21,24 +21,23 @@ struct ContentView: View {
             Text("--- Plan ahead, and make your shopping trip less chaotic")
                 .fontWeight(.bold)
                 .font(.largeTitle)
-        }.tabItem {
-            Text("Welcome Page")
-        }.tag(1)
-            
-         
-            Spacer()
-            
-            
             ZStack{
                 Circle()
-                    .fill(Color.white)
-                    .frame(width: 200, height: 200)
+                    .stroke(lineWidth: 15)
+                    .foregroundColor(.black)
+                    .frame(width: 120, height: 120)
                 Button("start planning"){
                    //go to the shopping page to add items to cart
                     //add code below
                     
                 }
             }
+        }.tabItem {
+            Text("Welcome Page")
+        }.tag(1)
+            
+         
+            Spacer()
         
                 
                 VStack(alignment: .leading, spacing: 4){
@@ -63,7 +62,7 @@ struct ContentView: View {
                         .padding(70)
                     //Spacer()
                     
-                    Text("the prices in this app are how much items usually cost, prices could be different depends on which grocery store the user ends up going to.")
+                    Text("The prices in this app are how much items usually cost, prices could be different depends on which grocery store the user ends up going to.")
                         .padding(70)
                     
                     
@@ -73,15 +72,6 @@ struct ContentView: View {
                 }.tag(2)
                 
             }//end big tag
-            
-            
-            
-//            Button("Help"){
-//                //go to the help page that describe how this app works, with contact info
-//                //add code below
-//              
-//            }
-//
             
             
     }
