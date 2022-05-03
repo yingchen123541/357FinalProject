@@ -8,39 +8,85 @@
 import SwiftUI
 
 struct ContentView: View {
-    //declare state object that can be changed
-    @StateObject private var foodStore : FoodStore = FoodStore(foods: foodData)
-    
     var body: some View {
-    NavigationView {
-        //a list of all the food items
-      List {
-         ForEach (foodStore.foods) { food in
-             ListCell(food: food)
-      }
-          //functions for moving and deleting food items
-         .onDelete(perform: deleteItems)
-         .onMove(perform: moveItems)
+        VStack{ //vertical stack
+            Text("Grocery Planning App")
+                .fontWeight(.bold)
+                .font(.largeTitle)
+            Image("groceryStore")
+            Spacer()
+            Text("--- Plan ahead, and make your shopping trip less chaotic")
+                .fontWeight(.bold)
+                .font(.largeTitle)
+            
+         
+            Spacer()
+            
+            
+            ZStack{
+                Circle()
+                    .fill(Color.white)
+                    .frame(width: 200, height: 200)
+                Button("start planning"){
+                   //go to the shopping page to add items to cart
+                    //add code below
+                }
+            }
+            
+            Button("Help"){
+                //go to the help page that describe how this app works, with contact info
+                //add code below
+            }
+          
+            
+            
     }
-      .navigationBarTitle(Text("Food Dishes"))
-      .navigationBarItems(leading: NavigationLink(destination: AddNewFood(foodStore: self.foodStore)) {
-          //connect the add view with the food list view
-          Text("Add")
-              .foregroundColor(.blue)
-      }, trailing: EditButton())
-     }
-    }
-    //function for deleting a food on the list
-    func deleteItems(at offsets: IndexSet) {
-        foodStore.foods.remove(atOffsets: offsets)
-    }
-    //function for moving a food on the list
-    func moveItems(from source: IndexSet, to destination: Int) { foodStore.foods.move(fromOffsets: source, toOffset: destination)
-    }
+  }
     
-}
+}//end content view
 
-struct ContentView_Previews: PreviewProvider {
+
+
+
+
+
+
+
+
+    //declare state object that can be changed
+//    @StateObject private var foodStore : FoodStore = FoodStore(foods: foodData)
+    
+//    var body: some View {
+//    NavigationView {
+//        //a list of all the food items
+//      List {
+//         ForEach (foodStore.foods) { food in
+//             ListCell(food: food)
+//      }
+//          //functions for moving and deleting food items
+//         .onDelete(perform: deleteItems)
+//         .onMove(perform: moveItems)
+//    }
+//      .navigationBarTitle(Text("Food Dishes"))
+//      .navigationBarItems(leading: NavigationLink(destination: AddNewFood(foodStore: self.foodStore)) {
+//          //connect the add view with the food list view
+//          Text("Add")
+//              .foregroundColor(.blue)
+//      }, trailing: EditButton())
+//     }
+//    }
+//    //function for deleting a food on the list
+//    func deleteItems(at offsets: IndexSet) {
+//        foodStore.foods.remove(atOffsets: offsets)
+//    }
+//    //function for moving a food on the list
+//    func moveItems(from source: IndexSet, to destination: Int) { foodStore.foods.move(fromOffsets: source, toOffset: destination)
+//    }
+    
+//}
+
+struct ContentView_Previews:
+    PreviewProvider {
     static var previews: some View {
         ContentView()
     }
@@ -48,19 +94,19 @@ struct ContentView_Previews: PreviewProvider {
 
 
 
-struct ListCell: View {
-    var food: Food
-    var body: some View {
-        //connect food dishes to the detail view for each food item
-        NavigationLink(destination: FoodDetail(selectedFood: food)) {
-        HStack {
-            Image(food.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 60)
-            Text(food.name)
-        }
-    }
-}
-}
+//struct ListCell: View {
+//    var food: Food
+//    var body: some View {
+//        //connect food dishes to the detail view for each food item
+//        NavigationLink(destination: FoodDetail(selectedFood: food)) {
+//        HStack {
+//            Image(food.imageName)
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 100, height: 60)
+//            Text(food.name)
+//        }
+//    }
+//}
+//}
 

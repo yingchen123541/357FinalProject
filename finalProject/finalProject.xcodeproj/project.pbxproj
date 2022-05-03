@@ -31,6 +31,8 @@
 		69A36EDD282088C90016182D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A36EB3282088C70016182D /* ContentView.swift */; };
 		69A36EDE282088C90016182D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A36EB4282088C90016182D /* Assets.xcassets */; };
 		69A36EDF282088C90016182D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A36EB4282088C90016182D /* Assets.xcassets */; };
+		69FB67032820E5D6005C193A /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB67022820E5D6005C193A /* Shopping.swift */; };
+		69FB67042820E5D6005C193A /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB67022820E5D6005C193A /* Shopping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 		69A36ED2282088C90016182D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A36ED6282088C90016182D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		69A36ED8282088C90016182D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		69FB67022820E5D6005C193A /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 			children = (
 				69A36EB2282088C70016182D /* finalProjectApp.swift */,
 				69A36EB3282088C70016182D /* ContentView.swift */,
+				69FB67022820E5D6005C193A /* Shopping.swift */,
 				697F9AFF28209D810003F53C /* AddNewFood.swift */,
 				697F9B0228209DB60003F53C /* FoodDetail.swift */,
 				697F9B0528209DD40003F53C /* Food.swift */,
@@ -332,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A36EDC282088C90016182D /* ContentView.swift in Sources */,
+				69FB67032820E5D6005C193A /* Shopping.swift in Sources */,
 				697F9B0028209D810003F53C /* AddNewFood.swift in Sources */,
 				697F9B0628209DD40003F53C /* Food.swift in Sources */,
 				697F9B0928209DEE0003F53C /* FoodData.swift in Sources */,
@@ -346,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A36EDD282088C90016182D /* ContentView.swift in Sources */,
+				69FB67042820E5D6005C193A /* Shopping.swift in Sources */,
 				697F9B0128209D810003F53C /* AddNewFood.swift in Sources */,
 				697F9B0728209DD40003F53C /* Food.swift in Sources */,
 				697F9B0A28209DEE0003F53C /* FoodData.swift in Sources */,
