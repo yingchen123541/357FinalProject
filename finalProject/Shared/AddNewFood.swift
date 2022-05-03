@@ -6,6 +6,13 @@
 //
 
 import SwiftUI
+
+
+
+
+
+
+
 struct AddNewFood: View {
   @StateObject var foodStore : FoodStore
   @State private var name: String = ""
@@ -39,24 +46,24 @@ struct AddNewFood: View {
     
 }
 
-struct DataInput: View {
-    var title: String
-    @Binding var userInput: String
-    
-    var body: some View {
-        VStack(alignment: HorizontalAlignment.leading) {
-            Text(title)
-                .font(.headline)
-            //text field for user input
-            TextField("Enter \(title)", text: $userInput)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-        }
-        .padding()
-        
-        
-        
-        }
-    }
+//struct DataInput: View {
+//    var title: String
+//    @Binding var userInput: String
+//
+//    var body: some View {
+//        VStack(alignment: HorizontalAlignment.leading) {
+//            Text(title)
+//                .font(.headline)
+//            //text field for user input
+//            TextField("Enter \(title)", text: $userInput)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+//        }
+//        .padding()
+//
+//
+//
+//        }
+//    }
     
 struct AddNewFood_Previews: PreviewProvider {
   static var previews: some View {
