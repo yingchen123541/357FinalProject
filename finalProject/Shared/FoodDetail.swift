@@ -16,7 +16,7 @@ struct FoodDetail: View {
     var body: some View {
         //this is the food item view with food name and description
         VStack{
-          Text("food item details")
+          Text("grocery item details")
           Divider()
             //larger font for the food name
           Text(selectedFood.name)

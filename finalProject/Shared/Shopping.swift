@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//the shopping scene to add grocery item to cart 
 struct Shopping: View {
     //declare state object that can be changed
     @StateObject private var foodStore : FoodStore = FoodStore(foods: foodData)
@@ -19,25 +20,18 @@ struct Shopping: View {
          ForEach (foodStore.foods) { food in
              ListCell(food: food)
       }
-          //functions for moving and deleting food items
-         .onDelete(perform: deleteItems)
-         .onMove(perform: moveItems)
-    }
-      .navigationBarTitle(Text("Food Dishes"))
+         
+      .navigationBarTitle(Text("Grocery Items"))
       .navigationBarItems(leading: NavigationLink(destination: AddNewFood(foodStore: self.foodStore)) {
           //connect the add view with the food list view
-          Text("Add")
+          Text("Shopping Cart")
+          //when click on this, will go to shopping cart with a summary of all items and total cost 
               .foregroundColor(.blue)
-      }, trailing: EditButton())
+      })
      }
     }
-    //function for deleting a food on the list
-    func deleteItems(at offsets: IndexSet) {
-        foodStore.foods.remove(atOffsets: offsets)
     }
-    //function for moving a food on the list
-    func moveItems(from source: IndexSet, to destination: Int) { foodStore.foods.move(fromOffsets: source, toOffset: destination)
-    }
+   
     
 }
 
