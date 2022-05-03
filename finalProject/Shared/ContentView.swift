@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 1
+    
     var body: some View {
+        TabView(selection: $selection) {
         VStack{ //vertical stack
             Text("Grocery Planning App")
                 .fontWeight(.bold)
@@ -18,6 +21,9 @@ struct ContentView: View {
             Text("--- Plan ahead, and make your shopping trip less chaotic")
                 .fontWeight(.bold)
                 .font(.largeTitle)
+        }.tabItem {
+            Text("Welcome Page")
+        }.tag(1)
             
          
             Spacer()
@@ -30,20 +36,58 @@ struct ContentView: View {
                 Button("start planning"){
                    //go to the shopping page to add items to cart
                     //add code below
+                    
                 }
             }
+        
+                
+                VStack(alignment: .leading, spacing: 4){
+                    Text("Help")
+                        .font(.largeTitle)
+                        .bold()
+                    
+                    Text("Customer Support: 714-733-4568 ")
+                        .font(.caption)
+                        .bold()
+                    Text("Email: plangrocery234@gmail.com")
+                        .font(.caption)
+                        .bold()
+                    //Spacer()
+                    
+                    Text("This is a grocery planning app in which the user can note the shopping date and add grocery items to shopping cart and get a total price of all the grocery items at the end.")
+                        .padding(70)
+                    
+                    //Spacer()
+                    
+                    Text("By using this app, users will know how much the grocery shopping trip will cost, and adjust item quantities beforehand, and come up with a final shopping list before entering the grocery store.")
+                        .padding(70)
+                    //Spacer()
+                    
+                    Text("the prices in this app are how much items usually cost, prices could be different depends on which grocery store the user ends up going to.")
+                        .padding(70)
+                    
+                    
+                }
+                .tabItem {
+                    Text("Help")
+                }.tag(2)
+                
+            }//end big tag
             
-            Button("Help"){
-                //go to the help page that describe how this app works, with contact info
-                //add code below
-            }
-          
+            
+            
+//            Button("Help"){
+//                //go to the help page that describe how this app works, with contact info
+//                //add code below
+//              
+//            }
+//
             
             
     }
   }
     
-}//end content view
+//end content view
 
 
 
