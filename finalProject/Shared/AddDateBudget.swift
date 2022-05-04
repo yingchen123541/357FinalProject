@@ -12,7 +12,7 @@ struct AddDateBudget: View {
     @State private var budget: String = ""
     
     var body: some View {
-        NavigationView {
+    //    NavigationView {
         Form {
             Section(header: Text("Add Date and Budget")) {
                 //get input from user for date
@@ -26,7 +26,7 @@ struct AddDateBudget: View {
             NavigationLink("Next", destination: Shopping())
        }
             
-    }//end navigation view 
+ //   }//end navigation view
     }
 }
 
