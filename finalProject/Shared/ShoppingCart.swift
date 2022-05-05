@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ShoppingCart: View {
-    //keep track of total price when user add stuffs to shopping cart 
+    //keep track of total price when user add stuffs to shopping cart
     @State var total: Float = 0.0
-    
     
     var body: some View {
         VStack{

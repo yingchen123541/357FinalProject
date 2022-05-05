@@ -10,7 +10,8 @@ import SwiftUI
 struct FoodDetail: View {
     //state variable to keep track of how many likes the food dish gets
     //if people like this dish can give it a like by clicking the "like" button
-    @State var like: Int = 0
+   // @State var like: Int = 0
+    @State var addToCart: Int = 0
     
     let selectedFood: Food
     var body: some View {
@@ -22,7 +23,7 @@ struct FoodDetail: View {
           Text(selectedFood.name)
                 .font(.custom("Copperplate",size:30))
             //display how many likes this food dish has
-          Text("like: \(like)")
+          Text("in cart: \(addToCart)")
                 .font(.custom("Copperplate",size:30))
           Spacer()
           Image(selectedFood.imageName)
@@ -37,8 +38,8 @@ struct FoodDetail: View {
             Spacer()
             //button for liking this dish, user can click this button if they like the dish
             Button(
-                action:{self.like = like + 1},
-                label:{Text("like")
+                action:{self.addToCart = addToCart + 1},
+                label:{Text("add to cart")
                         .font(.system(size: 40))
                 }
             )
