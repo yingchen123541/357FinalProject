@@ -7,33 +7,82 @@
     },
     {
         "id": "2",
-        "name": "proteinshake",
-        "description": "chocolate flavor protein shake pack of 18 bottles",
-        "imageName": "proteinshake",
-    },
-    {
-        "id": "3",
-        "name": "bread",
-        "description": "white bread one loaf",
-        "imageName": "bread",
-    },
-    {
-        "id": "4",
         "name": "salad",
         "description": "romaine salad mix 8oz",
         "imageName": "salad",
     },
     {
+        "id": "3",
+        "name": "mushroom",
+        "description": "mushroom 8oz",
+        "imageName": "mushroom",
+    },
+    {
+        "id": "4",
+        "name": "strawberry",
+        "description": "strawberry 2lb",
+        "imageName": "strawberry",
+    },
+    {
         "id": "5",
+        "name": "orange",
+        "description": "orange 8lbs",
+        "imageName": "orange",
+    },
+    {
+        "id": "6",
+        "name": "bread",
+        "description": "white bread one loaf",
+        "imageName": "bread",
+    },
+    {
+        "id": "7",
+        "name": "danish",
+        "description": "assorted danish(cheese and cherry flavors, pack of 9)",
+        "imageName": "danish",
+    },
+    {
+        "id": "8",
         "name": "steak",
         "description": "NewYork steak 8oz",
         "imageName": "steak",
     },
     {
-        "id": "6",
+        "id": "9",
         "name": "chickenwing",
         "description": "chicken wing 1lb",
         "imageName": "chickenwing",
+    },
+    {
+        "id": "10",
+        "name": "salmon",
+        "description": "salmon steak 1lb",
+        "imageName": "salmon",
+    },
+    {
+        "id": "11",
+        "name": "proteinshake",
+        "description": "chocolate flavor protein shake pack of 12 bottles",
+        "imageName": "proteinshake",
+    },
+    {
+        "id": "12",
+        "name": "almondmilk",
+        "description": "almond milk 32oz pack of 6",
+        "imageName": "almondmilk",
+    },
+    {
+        "id": "13",
+        "name": "seaweed",
+        "description": "seaweed pack of 12",
+        "imageName": "seaweed",
+    },
+    {
+        "id": "14",
+        "name": "udon",
+        "description": "instant udon noodles pack of 6",
+        "imageName": "udon",
     }
+    
     
 ]
