@@ -25,7 +25,8 @@ struct Shopping: View {
       .navigationBarTitle(Text("Grocery Items"))
       .navigationBarItems(leading: NavigationLink(destination: AddNewFood(foodStore: self.foodStore)) {
           //connect the add view with the food list view
-          Text("Shopping Cart")
+          NavigationLink("Shopping Cart", destination: ShoppingCart())
+          //Text("Shopping Cart")
           //when click on this, will go to shopping cart with a summary of all items and total cost 
               .foregroundColor(.blue)
       })
