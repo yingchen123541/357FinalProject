@@ -73,16 +73,52 @@
     },
     {
         "id": "13",
+        "name": "milk",
+        "description": "fairlife milk 2%",
+        "imageName": "milk",
+    },
+    {
+        "id": "14",
         "name": "seaweed",
         "description": "seaweed pack of 12",
         "imageName": "seaweed",
     },
     {
-        "id": "14",
+        "id": "15",
         "name": "udon",
         "description": "instant udon noodles pack of 6",
         "imageName": "udon",
-    }
+    },
+    {
+        "id": "16",
+        "name": "popcorn",
+        "description": "microwave popcorn 1lb",
+        "imageName": "popcorn",
+    },
+    {
+        "id": "17",
+        "name": "cookies",
+        "description": "hello panda cookies 1lb",
+        "imageName": "cookies",
+    },
+    {
+        "id": "18",
+        "name": "chips",
+        "description": "lays potato chips 1 bag",
+        "imageName": "chips",
+    },
+    {
+        "id": "19",
+        "name": "granola bar",
+        "description": "granola bars 1 lb",
+        "imageName": "bar",
+    },
+    {
+        "id": "20",
+        "name": "coffee",
+        "description": "starbucks coffee pods pack of 72",
+        "imageName": "coffee",
+    },
     
     
 ]
