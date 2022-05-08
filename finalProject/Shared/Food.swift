@@ -5,15 +5,22 @@
 //  Created by yingying Chen on 5/2/22.
 //
 
-import Foundation
 
-import SwiftUI
-struct Food : Codable, Identifiable {
-    //include the variables declared in the json file
-    var id: String
-    var name: String
-    var description: String
-    var price: Float
-    var imageName: String
-}
+
+
+
+
+//
+////old code working below
+//import Foundation
+//
+//import SwiftUI
+//struct Food : Codable, Identifiable {
+//    //include the variables declared in the json file
+//    var id: String
+//    var name: String
+//    var description: String
+//    var price: Float
+//    var imageName: String
+//}
 

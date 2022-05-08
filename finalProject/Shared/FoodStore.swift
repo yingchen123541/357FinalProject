@@ -10,13 +10,21 @@ import Foundation
 import SwiftUI
 import Combine
 
-class FoodStore : ObservableObject {
-    
-    @Published var foods: [Food]
-    //an array for storing all the food dishes
-    init (foods: [Food] = []) {
-        self.foods = foods
-}
-    
-}
+
+
+
+
+
+
+//
+////old code working below
+//class FoodStore : ObservableObject {
+//
+//    @Published var foods: [Food]
+//    //an array for storing all the food dishes
+//    init (foods: [Food] = []) {
+//        self.foods = foods
+//}
+//
+//}
 

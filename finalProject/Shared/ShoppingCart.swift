@@ -5,8 +5,14 @@
 //  Created by yingying Chen on 5/5/22.
 //
 
-import SwiftUI
 
+
+
+
+
+//old code working below
+
+//import SwiftUI
 //struct ShoppingCart: View {
 //    //keep track of total price when user add stuffs to shopping cart
 //    @State var total: Float = 0.0
