@@ -41,6 +41,7 @@
 		69F886FC28284C4100AE6BC8 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F886FB28284C4100AE6BC8 /* CartButton.swift */; };
 		69F886FE28284E8D00AE6BC8 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F886FD28284E8D00AE6BC8 /* CartView.swift */; };
 		69F887002828578800AE6BC8 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F886FF2828578800AE6BC8 /* ProductRow.swift */; };
+		69F8870228285E6900AE6BC8 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8870128285E6900AE6BC8 /* ProductDetail.swift */; };
 		69FB67032820E5D6005C193A /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB67022820E5D6005C193A /* Shopping.swift */; };
 		69FB67042820E5D6005C193A /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB67022820E5D6005C193A /* Shopping.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		69F886FB28284C4100AE6BC8 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		69F886FD28284E8D00AE6BC8 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		69F886FF2828578800AE6BC8 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		69F8870128285E6900AE6BC8 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		69FB67022820E5D6005C193A /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				697F9B1128209EA90003F53C /* foodData.json */,
 				69F886F62828445900AE6BC8 /* Models */,
 				69A36EB3282088C70016182D /* ContentView.swift */,
+				69F8870128285E6900AE6BC8 /* ProductDetail.swift */,
 				69F886FD28284E8D00AE6BC8 /* CartView.swift */,
 				69F886FF2828578800AE6BC8 /* ProductRow.swift */,
 				697F9B1728209F540003F53C /* foodAssets.xcassets */,
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F8870228285E6900AE6BC8 /* ProductDetail.swift in Sources */,
 				69F886FE28284E8D00AE6BC8 /* CartView.swift in Sources */,
 				69B5F6082821AE350046F8C9 /* AddDateBudget.swift in Sources */,
 				69A36EDC282088C90016182D /* ContentView.swift in Sources */,
