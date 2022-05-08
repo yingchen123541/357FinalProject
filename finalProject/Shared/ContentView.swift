@@ -27,7 +27,7 @@ struct ContentView: View {
             Spacer()
             Text("--- Plan ahead, and make your shopping trip less chaotic")
                 .fontWeight(.bold)
-                .font(.largeTitle)
+                .font(.title2)
             Spacer()
             //specify destination, go to input scene to add date and budget
             ZStack{
