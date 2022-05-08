@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ProductDetail: View {
-    
-
-
+    @State var navigationBarBackButtonHidden = true
     let selectedProduct: Product
     var body: some View {
 

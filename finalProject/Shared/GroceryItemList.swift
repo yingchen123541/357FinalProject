@@ -9,11 +9,13 @@ import SwiftUI
 
 
 struct GroceryItemList: View {
+    @State var navigationBarBackButtonHidden = true
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
-        NavigationView{
+       // NavigationView{
+            
             ScrollView{
                 LazyVGrid(columns: columns, spacing: 20){
                     ForEach(productList, id: \.id) { product in ProductCard(product: product)
@@ -21,8 +23,11 @@ struct GroceryItemList: View {
               }
             }
                 .padding()
-            }
+            } //end scrollview
+         
+        
             .navigationTitle(Text("Grocery Item"))
+        
             .toolbar {
                 NavigationLink{
                     CartView()
@@ -32,7 +37,8 @@ struct GroceryItemList: View {
                 }
                
             }
-        }//end navigation view
+       
+      //  }//end navigation view
         .navigationViewStyle(StackNavigationViewStyle())
         
         
@@ -103,14 +109,6 @@ struct ProductCard: View {
        
     }//end var body
 }//end product card view
-
-
-
-
-
-
-
-
 
 
 

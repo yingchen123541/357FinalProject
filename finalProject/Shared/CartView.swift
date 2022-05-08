@@ -29,10 +29,12 @@ struct CartView: View {
             } else{
                 Text("Your cart is empty")
             }
+            NavigationLink("Start Over", destination: AddDateBudget())
             
         }
         .navigationTitle(Text("My Cart"))
         .padding(.top)
+       
         
     }
 }

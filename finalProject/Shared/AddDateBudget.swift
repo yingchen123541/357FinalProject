@@ -12,9 +12,10 @@ import SwiftUI
 struct AddDateBudget: View {
     @State private var date: String = ""
     @State private var budget: String = ""
-
+    @State var navigationBarBackButtonHidden = true
     var body: some View {
     //    NavigationView {
+        
         Form {
             Section(header: Text("Add Date and Budget")) {
                 //get input from user for date
@@ -25,8 +26,9 @@ struct AddDateBudget: View {
                 var floatBudget = Float(budget)
 
             }
-            NavigationLink("Next", destination: GroceryItemList())
-       }
+            NavigationLink("Next", destination: GroceryItemList().navigationBarBackButtonHidden(true))
+            
+       }//end form
 
  //   }//end navigation view
     }

@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var selection = 1
     @State var date = "12/05/2022"
     @State var budget = "0.0"
+    @State var navigationBarBackButtonHidden = true
 
 
     var body: some View {
@@ -20,6 +21,7 @@ struct ContentView: View {
         NavigationView {
 
         TabView(selection: $selection) {
+       
 
         VStack{ //vertical stack
             Text("Grocery Planning App")
@@ -32,14 +34,17 @@ struct ContentView: View {
                 .font(.title2)
             Spacer()
             //specify destination, go to input scene to add date and budget
+            
             ZStack{
                 Circle()
                     .stroke(Color.black)
                     .frame(width: 107, height: 107)
-                NavigationLink("Start Planning", destination: AddDateBudget())
+                NavigationLink("Start Planning", destination: AddDateBudget().navigationBarBackButtonHidden(true))
+              
             }
-
-        }.tabItem {
+           
+        }
+        .tabItem {
             Text("Welcome Page")
         }.tag(1)
 
