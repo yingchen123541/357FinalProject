@@ -62,8 +62,9 @@ struct ProductCard: View {
                     Text(product.name)
                         .bold()
                     
-                    Text("$\(product.price)")
+                    Text("$\(product.price,specifier: "%.2f")")
                         .font(.caption)
+                    
                     
                     NavigationLink(destination: ProductDetail(selectedProduct: product)){
                         Text("details")

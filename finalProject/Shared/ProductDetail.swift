@@ -35,10 +35,9 @@ struct ProductDetail: View {
             .font(.system(size: 35))
             Spacer()
 
-
           Text("Price: ")
             .font(.system(size: 20))
-          Text("$\(selectedProduct.price)")
+          Text("$\(selectedProduct.price,specifier: "%.2f")")
             .font(.system(size: 35))
             Spacer()
           }//end group
