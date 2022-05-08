@@ -22,7 +22,12 @@ struct ContentView: View {
             }
             .navigationTitle(Text("Grocery Item"))
             .toolbar {
-                CartButton(numberOfProducts: 1)
+                NavigationLink{
+                    CartView()
+                } label: {
+                    CartButton(numberOfProducts: 1)
+                }
+               
             }
         }//end navigation view
         .navigationViewStyle(StackNavigationViewStyle())
