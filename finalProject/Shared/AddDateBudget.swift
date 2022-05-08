@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-
+//
 struct AddDateBudget: View {
     @State private var date: String = ""
     @State private var budget: String = ""
-    
+
     var body: some View {
     //    NavigationView {
         Form {
@@ -21,11 +21,11 @@ struct AddDateBudget: View {
                 DataInput(title: "Budget", userInput: $budget)
                 //convert budget from string to double
                 var floatBudget = Float(budget)
-                
+
             }
             NavigationLink("Next", destination: Shopping())
        }
-            
+
  //   }//end navigation view
     }
 }
@@ -48,12 +48,6 @@ struct DataInput: View {
 
         }
     }
-
-
-
-
-
-
 
 
 
