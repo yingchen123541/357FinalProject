@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		697F9B1228209EA90003F53C /* foodData.json in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1128209EA90003F53C /* foodData.json */; };
-		697F9B1328209EA90003F53C /* foodData.json in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1128209EA90003F53C /* foodData.json */; };
 		697F9B1828209F540003F53C /* foodAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1728209F540003F53C /* foodAssets.xcassets */; };
 		697F9B1928209F540003F53C /* foodAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1728209F540003F53C /* foodAssets.xcassets */; };
 		69A36ECB282088C90016182D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A36ECA282088C90016182D /* Tests_iOS.swift */; };
@@ -49,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		697F9B1128209EA90003F53C /* foodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodData.json; sourceTree = SOURCE_ROOT; };
 		697F9B1728209F540003F53C /* foodAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = foodAssets.xcassets; sourceTree = SOURCE_ROOT; };
 		69A36EB2282088C70016182D /* finalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectApp.swift; sourceTree = "<group>"; };
 		69A36EB3282088C70016182D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				69A36EB2282088C70016182D /* finalProjectApp.swift */,
-				697F9B1128209EA90003F53C /* foodData.json */,
 				69F886F62828445900AE6BC8 /* Models */,
 				69A36EB3282088C70016182D /* ContentView.swift */,
 				69B5F6072821AE350046F8C9 /* AddDateBudget.swift */,
@@ -308,7 +304,6 @@
 			files = (
 				697F9B1828209F540003F53C /* foodAssets.xcassets in Resources */,
 				69A36EDE282088C90016182D /* Assets.xcassets in Resources */,
-				697F9B1228209EA90003F53C /* foodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +313,6 @@
 			files = (
 				697F9B1928209F540003F53C /* foodAssets.xcassets in Resources */,
 				69A36EDF282088C90016182D /* Assets.xcassets in Resources */,
-				697F9B1328209EA90003F53C /* foodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

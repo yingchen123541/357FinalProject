@@ -72,7 +72,7 @@ struct ProductCard: View {
                 
                 }
                 .padding()
-                .frame(width: 100, alignment: .leading)
+                .frame(width: 150, height:60, alignment: .leading)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 
