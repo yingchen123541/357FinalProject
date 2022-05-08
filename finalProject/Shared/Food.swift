@@ -13,6 +13,7 @@ struct Food : Codable, Identifiable {
     var id: String
     var name: String
     var description: String
+    var price: String
     var imageName: String
 }
 

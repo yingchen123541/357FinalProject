@@ -20,23 +20,34 @@ struct FoodDetail: View {
           Text("grocery item details")
           Divider()
             //larger font for the food name
+            Group{
           Text(selectedFood.name)
                 .font(.custom("Copperplate",size:30))
             //display how many likes this food dish has
           Text("in cart: \(addToCart)")
                 .font(.custom("Copperplate",size:30))
           Spacer()
+            }//end group
           Image(selectedFood.imageName)
                 .resizable()
                 .cornerRadius(12.0).aspectRatio(contentMode: .fit)
                 .padding()
-            
+          Group{
           Text("Description: ")
             .font(.system(size: 20))
           Text(selectedFood.description)
             .font(.system(size: 35))
             Spacer()
+            
+          Text("Price: ")
+            .font(.system(size: 20))
+          Text(selectedFood.price)
+            .font(.system(size: 35))
+            Spacer()
+          }//end group
             //button for liking this dish, user can click this button if they like the dish
+   
+            
             Button(
                 action:{self.addToCart = addToCart + 1},
                 label:{Text("add to cart")
@@ -44,7 +55,7 @@ struct FoodDetail: View {
                 }
             )
             
-        }
+        }//end vstack
         
     }
 }

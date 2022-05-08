@@ -17,6 +17,7 @@ struct AddNewFood: View {
   @StateObject var foodStore : FoodStore
   @State private var name: String = ""
   @State private var description: String = ""
+  @State private var price: String = ""
     //this view is for adding new food items with the name and description for the food
     var body: some View {
         Form {
@@ -37,7 +38,7 @@ struct AddNewFood: View {
     func addNewFood() {
             let newFood = Food(id: UUID().uuidString,
                 //use a general food image for adding new food
-                          name: name, description: description,imageName: "food2"
+                               name: name, description: description,price:price,imageName: "food2"
                           )
         //add the newly added food to the list of all foods
             foodStore.foods.append(newFood)
