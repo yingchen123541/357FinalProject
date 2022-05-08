@@ -12,9 +12,12 @@ struct FoodDetail: View {
     //if people like this dish can give it a like by clicking the "like" button
    // @State var like: Int = 0
     @State var addToCart: Int = 0
+    var groceryList: [Any] = []
+
     
     let selectedFood: Food
     var body: some View {
+        
         //this is the food item view with food name and description
         VStack{
           Text("grocery item details")
@@ -38,10 +41,11 @@ struct FoodDetail: View {
           Text(selectedFood.description)
             .font(.system(size: 35))
             Spacer()
+        
             
           Text("Price: ")
             .font(.system(size: 20))
-          Text(selectedFood.price)
+          Text(String(selectedFood.price))
             .font(.system(size: 35))
             Spacer()
           }//end group
@@ -57,6 +61,32 @@ struct FoodDetail: View {
             
         }//end vstack
         
+    }
+}
+
+//move the shopping cart view inside the FoodDetail view to access the add to cart variable
+struct ShoppingCart: View {
+    //keep track of total price when user add stuffs to shopping cart
+    @State var total: Float = 0.0
+  //  var groceryList: [Food] = []
+    
+    
+    
+    var body: some View {
+        
+            
+        VStack{
+        Text("Shopping Cart")
+            .font(.largeTitle)
+            .bold()
+        Spacer()
+        
+      //  print_grocery()
+        //display total price in 2 decimal places
+        Text("Total: \(total, specifier: "%.2f")")
+            .font(.custom("Copperplate",size:25))
+        }
+            
     }
 }
 
