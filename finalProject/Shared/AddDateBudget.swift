@@ -8,10 +8,11 @@
 
 ////old code working below
 import SwiftUI
-//
+
+
 struct AddDateBudget: View {
-    @State private var date: String = ""
-    @State private var budget: String = ""
+    @State var date: String = ""
+    @State var budget: String = ""
     @State var navigationBarBackButtonHidden = true
     var body: some View {
     //    NavigationView {
@@ -52,6 +53,7 @@ struct DataInput: View {
 
         }
     }
+
 
 
 

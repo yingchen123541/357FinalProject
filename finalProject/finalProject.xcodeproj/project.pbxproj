@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696A0F43282892A500C5B9F0 /* FinishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A0F42282892A500C5B9F0 /* FinishPage.swift */; };
+		696A0F44282892A500C5B9F0 /* FinishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A0F42282892A500C5B9F0 /* FinishPage.swift */; };
 		697F9B1828209F540003F53C /* foodAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1728209F540003F53C /* foodAssets.xcassets */; };
 		697F9B1928209F540003F53C /* foodAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697F9B1728209F540003F53C /* foodAssets.xcassets */; };
 		69A36ECB282088C90016182D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A36ECA282088C90016182D /* Tests_iOS.swift */; };
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		696A0F42282892A500C5B9F0 /* FinishPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPage.swift; sourceTree = "<group>"; };
 		697F9B1728209F540003F53C /* foodAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = foodAssets.xcassets; sourceTree = SOURCE_ROOT; };
 		69A36EB2282088C70016182D /* finalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectApp.swift; sourceTree = "<group>"; };
 		69A36EB3282088C70016182D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 				69F887032828678100AE6BC8 /* GroceryItemList.swift */,
 				69F8870128285E6900AE6BC8 /* ProductDetail.swift */,
 				69F886FD28284E8D00AE6BC8 /* CartView.swift */,
+				696A0F42282892A500C5B9F0 /* FinishPage.swift */,
 				69F886FF2828578800AE6BC8 /* ProductRow.swift */,
 				697F9B1728209F540003F53C /* foodAssets.xcassets */,
 				69A36EB4282088C90016182D /* Assets.xcassets */,
@@ -342,6 +346,7 @@
 				69B5F6082821AE350046F8C9 /* AddDateBudget.swift in Sources */,
 				69A36EDC282088C90016182D /* ContentView.swift in Sources */,
 				69F887002828578800AE6BC8 /* ProductRow.swift in Sources */,
+				696A0F43282892A500C5B9F0 /* FinishPage.swift in Sources */,
 				69DD2FAD2827C786002B3383 /* CartManager.swift in Sources */,
 				69F886FC28284C4100AE6BC8 /* CartButton.swift in Sources */,
 				69F886F8282844C900AE6BC8 /* Product.swift in Sources */,
@@ -355,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A36EDD282088C90016182D /* ContentView.swift in Sources */,
+				696A0F44282892A500C5B9F0 /* FinishPage.swift in Sources */,
 				69A36EDB282088C90016182D /* finalProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

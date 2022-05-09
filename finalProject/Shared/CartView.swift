@@ -30,6 +30,8 @@ struct CartView: View {
                 Text("Your cart is empty")
             }
             NavigationLink("Start Over", destination: AddDateBudget())
+            Spacer()
+            NavigationLink("Finish Planning", destination: FinishPage())
             
         }
         .navigationTitle(Text("My Cart"))
